@@ -22,7 +22,7 @@
 <script type="text/javascript">
 	$(function(){
 		$("#createBtn").click(function (){
-
+			$("#createForm").get(0).reset();
 			$("#createActivityModal").modal("show")
 		})
 		$("#saveActivityBtn").click(function (){
@@ -313,7 +313,7 @@
 
 				<div class="modal-body" id="activityForm">
 				
-					<form class="form-horizontal" role="form">
+					<form id="createForm" class="form-horizontal" role="form">
 					
 						<div class="form-group">
 							<label for="create-marketActivityOwner" class="col-sm-2 control-label">所有者<span style="font-size: 15px; color: red;">*</span></label>
